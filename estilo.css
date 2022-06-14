@@ -1,0 +1,198 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+font-family: 'Adobe Garamond', sans-serif;
+font-weight: 500;
+}
+
+
+.clear{
+  clear:both;
+}
+/* Menú normal (desktop) */
+.normal{
+background-color: green;
+width:100%;
+}
+
+.normal ul{
+  list-style-type: none;
+}
+.normal ul li a{
+  text-decoration:none;
+  padding-top:10px;
+  padding-bottom:10px;
+  display:block;
+  float:left;
+  width:25%;
+  text-align: center;
+ color:black;
+ background-color: silver;
+}
+.normal ul li a:hover{
+  color:white;
+  background-color: #013C14;
+}
+
+#contenedor{
+width: 500px;
+height: 400px;
+padding: 1%;
+float left:  100%;
+
+}
+
+
+.text{
+  float left:  10%;
+margin-top: 10%;
+
+
+
+}
+
+
+
+
+#imatgesmenjar{
+  width: 1000px;
+  height:700px;
+  float left:  10%;
+  margin-bottom: 10%;
+    margin: center:  100%;
+}
+
+.modulcontactes{
+  width: 200px;
+  height:200px;
+  background-color: salmon;
+  float: left;
+  margin: 5%;
+}
+
+.modulquisom{
+  width: 1000px;
+  height:500px;
+  background-color: #BAFAE7;
+  float: left;
+  margin: 6%;
+
+}
+
+
+
+
+.imatgesmenjar{
+  width: 100px;
+  height:100px;
+  background: lightgreen;
+  float: center;
+  margin: 5%;
+
+
+
+}
+
+
+
+.moduloinici{
+
+  width: 1200px;
+  height:400px;
+  background: lightgreen;
+  float: center;
+  margin: 1%;
+}
+
+
+
+
+
+
+/* Menú mobile (movil) */
+.mobile ul{
+  display: none;
+}
+
+
+
+input:checked  ~ ul{
+  display:block;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  margin:20px;
+
+}
+
+label:hover{
+  background: #AF9D5C;
+}
+
+input:checked ~ label {
+  background: orange;
+}
+
+.mobile ul{
+  margin-top:30;
+  padding: 10;
+  width: 105px;
+
+}
+
+
+.mobile ul li {
+  display: block;
+  background: white;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid blue;
+}
+.mobile ul li:hover {
+  filter: brightness(90%);
+}
+
+h1{
+  font-family: 'Abobe Garamond', semibold;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: left;
+}
+
+.mobile{
+    display:none;
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    background-color: #FFC14E;
+  }
+  .normal{
+    display:none;
+  }
+  .modulo{
+    width: 650%;
+    margin: 100%;
+  }
+  .mobile{
+      display:block;
+  }
+}
